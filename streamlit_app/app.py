@@ -84,7 +84,7 @@ with col1:
     st.markdown("---")
     
     # Method 2: Browser Recording (Alternative - may not work on all deployments)
-    st.markdown("**Or try browser recording (experimental):**")
+    st.markdown("**Or try browser recording:**")
     
     # Simple HTML5 audio recording
     audio_html = """
