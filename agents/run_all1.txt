@@ -1,0 +1,9 @@
+start cmd /k "uvicorn api_agent.main:app --reload --port 8001"
+start cmd /k "uvicorn scraper_agent.main:app --reload --port 8002"
+start cmd /k "uvicorn retriever_agent.main:app --reload --port 8003"
+start cmd /k "uvicorn language_agent.main:app --reload --port 8004"
+start cmd /k "uvicorn voice_agent.main:app --reload --port 8005"
+start cmd /k "uvicorn orchestrator.main:app --reload --port 8006"
+
+cd "x:\CODing BCCCC\finance agent\streamlit_app"
+streamlit run app.py

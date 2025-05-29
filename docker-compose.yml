@@ -1,0 +1,65 @@
+version: "3.9"
+
+services:
+  api_agent:
+    build: ./agents/api_agent
+    ports:
+      - "8001:8001"
+    networks:
+      - agent-net
+
+  language_agent:
+    build: ./agents/language_agent
+    ports:
+      - "8004:8004"
+    networks:
+      - agent-net
+
+  retriever_agent:
+    build: ./agents/retriever_agent
+    ports:
+      - "8003:8003"
+    networks:
+      - agent-net
+
+  scraper_agent:
+    build: ./agents/scraper_agent
+    ports:
+      - "8002:8002"
+    networks:
+      - agent-net
+
+  voice_agent:
+    build: ./agents/voice_agent
+    ports:
+      - "8005:8005"
+    networks:
+      - agent-net
+
+  orchestrator:
+    build: ./agents/orchestrator
+    ports:
+      - "8006:8006"
+    depends_on:
+      - api_agent
+      - language_agent
+      - retriever_agent
+      - scraper_agent
+      - voice_agent
+    networks:
+      - agent-net
+  
+  streamlit_app:
+    build: ./streamlit_app
+    ports:
+      - "8501:8501"
+    depends_on:
+      - orchestrator
+    networks:
+      - agent-net
+
+ 
+
+networks:
+  agent-net:
+    driver: bridge

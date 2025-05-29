@@ -1,0 +1,24 @@
+# Core frameworks
+streamlit
+fastapi
+uvicorn
+requests
+
+# Web scraping
+beautifulsoup4
+
+# Finance
+yfinance
+
+# LangChain & AI
+langchain
+langchain-google-genai
+faiss-cpu
+sentence-transformers
+numpy
+python-dotenv
+
+# Audio
+whisper
+gtts
+pydub
