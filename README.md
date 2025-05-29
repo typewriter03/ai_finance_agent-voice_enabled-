@@ -3,7 +3,7 @@
 This project is a multi-agent voice-enabled financial assistant that understands voice or text-based queries about the stock market, fetches real-time data, retrieves relevant news, summarizes it using an LLM, and responds back with both text and synthesized speech.
 
 Note: The Streamlit frontend is deployed separately, while the Orchestrator and other agents—API Agent, Retriever Agent, Scraper Agent, Language Agent, and Voice Agent—are all deployed live on Render.
-
+Demo Of Project:https://youtu.be/PdxWSEtlPVU
 ---
 
 ## 📂 Directory Structure
