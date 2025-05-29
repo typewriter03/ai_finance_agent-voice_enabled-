@@ -1,4 +1,3 @@
 streamlit
-sounddevice
 scipy
 requests
