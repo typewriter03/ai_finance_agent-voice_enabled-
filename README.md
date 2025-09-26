@@ -150,7 +150,7 @@ docker-compose up --build
 
 ---
 
-## 📈 Performance Benchmarks *(optional)*
+## 📈 Performance Benchmarks
 
 * Query time: \~15-18s for stock + news + summary
 * LLM: Gemini 1.5 Flash (Best free available LLM)
@@ -203,3 +203,4 @@ $ docker-compose logs orchestrator
 A Demo Video is Uploaded of the functioning of Project.
 
 > *Thanks for reading!* ✨
+
